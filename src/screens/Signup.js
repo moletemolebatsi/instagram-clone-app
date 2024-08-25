@@ -11,10 +11,10 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 import SignupForm from "../components/signup/SignupForm";
-import Footer from "../components/signup/Footer";
+
 import { MaterialIcons } from "@expo/vector-icons";
 import FastImage from "react-native-fast-image";
-import { SIZES } from "../constants";
+
 
 const Signup = ({ navigation }) => {
   return (
@@ -38,7 +38,7 @@ const Signup = ({ navigation }) => {
             </View>
           </View>
         </KeyboardAvoidingView>
-        <Footer navigation={navigation} />
+        
       </SafeAreaView>
     </TouchableWithoutFeedback>
   );
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     justifyContent: "center",
-    marginTop: -SIZES.Width * 0.15,
+    marginTop: 100,
   },
   logoContainer: {
     alignItems: "center",
