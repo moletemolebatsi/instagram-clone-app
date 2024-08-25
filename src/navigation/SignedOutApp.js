@@ -1,25 +1,25 @@
-import LoginApp from "../screens/LoginApp";
-import ForgotApp from "../screens/ForgotApp";
+import Login from "../screens/Login";
+import Forgot from "../screens/Forgot";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import SignupApp from "../screens/SignupApp";
+import Signup from "../screens/Signup";
 
 const Stack = createNativeStackNavigator();
 
 const SignedOutApp = () => (
   <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Login" component={LoginApp} />
+      <Stack.Screen name="Login" component={Login} />
       <Stack.Screen
         name="Signup"
-        component={SignupApp}
+        component={Signup}
         options={{
           animation: "slide_from_right",
         }}
       />
       <Stack.Screen
         name="Forgot"
-        component={ForgotApp}
+        component={Forgot}
         options={{
           animation: "slide_from_right",
         }}
