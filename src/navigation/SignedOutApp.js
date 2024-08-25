@@ -17,13 +17,7 @@ const SignedOutApp = () => (
           animation: "slide_from_right",
         }}
       />
-      <Stack.Screen
-        name="Forgot"
-        component={Forgot}
-        options={{
-          animation: "slide_from_right",
-        }}
-      />
+      
     </Stack.Navigator>
   </NavigationContainer>
 );
