@@ -4,7 +4,7 @@ import SignedOutStack from "./SignedOutStack";
 import SignedInStack from "./SignedInStack";
 import firebase from "../services/firebase";
 
-const AuthNavigation = () => {
+const AppNav = () => {
   const [currentUser, setCurrentUser] = useState(null);
 
   const userHandler = (user) =>
@@ -22,7 +22,7 @@ const AuthNavigation = () => {
   );
 };
 
-export default AuthNavigation;
+export default AppNav;
 
 const styles = StyleSheet.create({
   container: {
